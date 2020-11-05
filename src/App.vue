@@ -1,10 +1,14 @@
 <template>
-    <h1>Hello World!</h1>
+    <div>
+        <ContainerList></ContainerList>
+    </div>
 </template>
 
 <script>
+import ContainerList from "./ContainerList";
 export default {
-    name: "App"
+    name: "App",
+    components: { ContainerList }
 };
 </script>
 
