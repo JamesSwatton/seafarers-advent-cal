@@ -1,14 +1,21 @@
 <template>
-    <div>
+    <div id="app" class="overflow-hidden" :style="backgroundImage">
         <ContainerList></ContainerList>
     </div>
 </template>
 
 <script>
-import ContainerList from "./ContainerList";
+import ContainerList from "./components/ContainerList";
 export default {
     name: "App",
-    components: { ContainerList }
+    components: { ContainerList },
+    computed: {
+        backgroundImage() {
+            return {
+                backgroundImage: `url(${require("./assets/background.png")})`
+            };
+        }
+    }
 };
 </script>
 
@@ -19,6 +26,6 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    max-height: 1920px;
 }
 </style>
