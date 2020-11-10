@@ -1,31 +1,36 @@
 <template>
     <div>
         <div
-            class="w-48 h-48 bg-contain"
+            class="w-48 h-48 bg-cover"
             :style="getContainer"
             v-if="!opened && day == 0"
         ></div>
-        <div
-            class="flex items-center justify-center w-48 h-48 bg-contain"
+        <button
+            class="flex items-center justify-center w-48 h-48 bg-center bg-contain"
             :style="getDoor"
             v-else-if="!opened && day > 0"
             @click="clicked = true"
         >
             <p class="text-6xl font-extrabold text-white">{{ parseDay }}</p>
-        </div>
+        </button>
         <!-- <img -->
         <!--     class="object-fill w-48 h-48" -->
         <!--     :src="require('../assets/container_' + getRandomAssetPath.src)" -->
         <!--     :alt="getRandomAssetPath.alt" -->
         <!--     v-if="!opened && day == 0" -->
         <!-- /> -->
-        <!-- <img -->
-        <!--     class="object-fill w-48 h-48" -->
-        <!--     :src="require('../assets/container_door_' + getRandomAssetPath.src)" -->
-        <!--     :alt="getRandomAssetPath.alt" -->
-        <!--     v-else-if="!opened && day > 0" -->
-        <!--     @click="clicked = true" -->
-        <!-- /> -->
+        <!-- <div v-else-if="!opened && day > 0"> -->
+        <!--     <img -->
+        <!--         class="object-fill w-48 h-48 " -->
+        <!--         :src=" -->
+        <!--             require('../assets/container_door_' + -->
+        <!--                 getRandomAssetPath.src) -->
+        <!--         " -->
+        <!--         :alt="getRandomAssetPath.alt" -->
+        <!--         @click="clicked = true" -->
+        <!--     /> -->
+        <!--     <p class="text-6xl font-extrabold text-white ">{{ parseDay }}</p> -->
+        <!-- </div> -->
         <div
             v-else
             class="flex items-center justify-center w-48 h-48 bg-gray-500"

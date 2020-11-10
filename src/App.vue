@@ -1,5 +1,8 @@
 <template>
-    <div id="app" class="overflow-hidden" :style="backgroundImage">
+    <!-- <div id="app" class="overflow-hidden" :style="backgroundImage"> -->
+    <!--     <ContainerList></ContainerList> -->
+    <!-- </div> -->
+    <div class="bg-gray-900">
         <ContainerList></ContainerList>
     </div>
 </template>
@@ -26,6 +29,5 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    max-height: 1920px;
 }
 </style>

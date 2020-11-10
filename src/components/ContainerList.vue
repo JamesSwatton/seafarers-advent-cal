@@ -1,6 +1,6 @@
 <template>
-    <div class="w-4/6 pt-64 mx-auto h-full">
-        <div class="flex flex-row flex-wrap-reverse mx-auto overflow-hidden">
+    <div class="w-4/6 pt-64 mx-auto">
+        <div class="flex flex-row flex-wrap-reverse mx-auto">
             <Container
                 v-for="(item, i) in grid.toString().split(',')"
                 :key="i"
