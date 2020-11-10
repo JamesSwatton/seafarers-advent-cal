@@ -45,7 +45,7 @@
 <script>
 export default {
     name: "Container",
-    props: ["day"],
+    props: ["day", "openedDoors"],
     data() {
         return {
             link: "https://www.seafarerswelfare.org/",
@@ -62,7 +62,16 @@ export default {
     },
     watch: {
         clicked() {
-            if (this.clicked && this.isCorrectDay) this.opened = true;
+            if (this.clicked && this.isCorrectDay) {
+                this.opened = true;
+                this.$emit("openedDoor", this.day);
+            }
+        }
+    },
+    methods: {
+        checkForOpened() {
+            if (this.openedDoors.includes(parseInt(this.day)))
+                this.opened = true;
         }
     },
     computed: {
@@ -95,6 +104,9 @@ export default {
                     this.getRandomAssetPath.src)})`
             };
         }
+    },
+    created() {
+        this.checkForOpened();
     }
 };
 </script>

@@ -5,6 +5,8 @@
                 v-for="(item, i) in grid.toString().split(',')"
                 :key="i"
                 :day="item"
+                :openedDoors="openedDoors"
+                @openedDoor="openedDoors.push(parseInt($event))"
             ></Container>
         </div>
     </div>
@@ -17,6 +19,7 @@ export default {
     components: { Container },
     data() {
         return {
+            openedDoors: [],
             grid: [
                 [11, 0, 3, 0],
                 [0, 4, 0, 16],
@@ -31,6 +34,39 @@ export default {
                 [7, 18, 0, 23]
             ]
         };
+    },
+    watch: {
+        openedDoors() {
+            let uniqueDoorNums = this.openedDoors.filter(
+                (v, i, arr) => arr.indexOf(v) === i
+            );
+            document.cookie = `openedDoors=${uniqueDoorNums.toString()}`;
+        }
+    },
+    methods: {
+        createCookie() {
+            if (!document.cookie) {
+                document.cookie = "openedDoors=0";
+                console.log(document.cookie);
+            } else {
+                console.log(document.cookie);
+            }
+        },
+        setOpenedDoors() {
+            let crumbs = document.cookie.split("; ");
+            crumbs.forEach(crumb => {
+                let cSplit = crumb.split("=");
+                if (cSplit[0] == "openedDoors") {
+                    this.openedDoors = cSplit[1]
+                        .split(",")
+                        .map(n => parseInt(n));
+                }
+            });
+        }
+    },
+    created() {
+        this.createCookie();
+        this.setOpenedDoors();
     }
 };
 </script>
