@@ -1,17 +1,19 @@
 <template>
     <div>
         <div
-            class="w-48 h-48 bg-cover"
+            class="w-24 h-24 bg-cover md:w-32 md:h-32 lg:w-48 lg:h-48"
             :style="getContainer"
             v-if="!opened && day == 0"
         ></div>
         <button
-            class="flex items-center justify-center w-48 h-48 bg-center bg-contain"
+            class="flex items-center justify-center w-24 h-24 bg-center bg-contain md:w-32 md:h-32 lg:w-48 lg:h-48"
             :style="getDoor"
             v-else-if="!opened && day > 0"
             @click="clicked = true"
         >
-            <p class="text-6xl font-extrabold text-white">{{ parseDay }}</p>
+            <p class="text-3xl font-extrabold text-white md:text-6xl">
+                {{ parseDay }}
+            </p>
         </button>
         <!-- <img -->
         <!--     class="object-fill w-48 h-48" -->
@@ -33,11 +35,21 @@
         <!-- </div> -->
         <div
             v-else
-            class="flex items-center justify-center w-48 h-48 bg-gray-500"
+            class="relative w-24 h-24 bg-gray-800 md:w-32 md:h-32 lg:w-48 lg:h-48"
         >
-            <p class="text-3xl text-white underline">
-                <a :href="link">ISWAN</a>
+            <p
+                class="absolute top-0 right-0 mt-1 mr-3 text-2xl text-white opacity-75 md:text-3xl md:mt-2 md:mr-4 lg:mt-6 lg:mr-8"
+            >
+                {{ day }}
             </p>
+            <div
+                class="absolute top-0 left-0 flex flex-col items-center justify-center w-24 h-24 bg-cover md:w-32 md:h-32 lg:w-48 lg:h-48"
+                :style="getOpenDoor"
+            >
+                <p class="text-xl text-white underline md:text-3xl">
+                    <a :href="link">ISWAN</a>
+                </p>
+            </div>
         </div>
     </div>
 </template>
@@ -95,6 +107,12 @@ export default {
         getDoor() {
             return {
                 backgroundImage: `url(${require("../assets/container_door_" +
+                    this.getRandomAssetPath.src)})`
+            };
+        },
+        getOpenDoor() {
+            return {
+                backgroundImage: `url(${require("../assets/container_door_open_" +
                     this.getRandomAssetPath.src)})`
             };
         },

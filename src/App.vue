@@ -2,7 +2,12 @@
     <!-- <div id="app" class="overflow-hidden" :style="backgroundImage"> -->
     <!--     <ContainerList></ContainerList> -->
     <!-- </div> -->
-    <div class="bg-gray-900">
+    <div class="relative bg-gradient-to-b from-gray-700 to-gray-900">
+        <img
+            src="./assets/moon.png"
+            alt="moon"
+            class="absolute right-0 w-16 mt-16 mr-10 md:mr-24 lg:mt-24 lg:w-24"
+        />
         <ContainerList></ContainerList>
     </div>
 </template>

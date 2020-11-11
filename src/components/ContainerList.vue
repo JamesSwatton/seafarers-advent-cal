@@ -1,5 +1,7 @@
 <template>
-    <div class="w-4/6 pt-64 mx-auto">
+    <div
+        class="relative w-5/6 pt-32 mx-auto sm:pl-10 md:pl-0 md:pt-64 md:w-4/6"
+    >
         <div class="flex flex-row flex-wrap-reverse mx-auto">
             <Container
                 v-for="(item, i) in grid.toString().split(',')"
@@ -28,7 +30,7 @@ export default {
                 [0, 5, 0, 2],
                 [0, 12, 0, 19],
                 [10, 1, 13, 0],
-                [0, 0, 17, 22],
+                [9, 0, 17, 22],
                 [21, 0, 25, 0],
                 [0, 6, 15, 0],
                 [7, 18, 0, 23]
@@ -41,12 +43,13 @@ export default {
                 (v, i, arr) => arr.indexOf(v) === i
             );
             document.cookie = `openedDoors=${uniqueDoorNums.toString()}`;
+            console.log(document.cookie);
         }
     },
     methods: {
         createCookie() {
             if (!document.cookie) {
-                document.cookie = "openedDoors=0";
+                document.cookie = "openedDoors=";
                 console.log(document.cookie);
             } else {
                 console.log(document.cookie);
