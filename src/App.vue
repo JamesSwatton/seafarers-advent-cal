@@ -16,14 +16,14 @@
 import ContainerList from "./components/ContainerList";
 export default {
     name: "App",
-    components: { ContainerList },
-    computed: {
-        backgroundImage() {
-            return {
-                backgroundImage: `url(${require("./assets/background.png")})`
-            };
-        }
-    }
+    components: { ContainerList }
+    //computed: {
+    //    backgroundImage() {
+    //        return {
+    //            backgroundImage: `url(${require("./assets/background.png")})`
+    //        };
+    //    }
+    //}
 };
 </script>
 

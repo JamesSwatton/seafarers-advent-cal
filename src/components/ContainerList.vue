@@ -1,6 +1,6 @@
 <template>
     <div
-        class="relative w-5/6 pt-32 mx-auto sm:pl-10 md:pl-0 md:pt-64 md:w-4/6"
+        class="relative w-5/6 pt-32 pb-10 mx-auto sm:pl-10 md:pl-0 md:pt-64 md:w-4/6"
     >
         <div class="flex flex-row flex-wrap-reverse mx-auto">
             <Container
