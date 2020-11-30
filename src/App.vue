@@ -16,14 +16,12 @@
                 class="fixed top-0 right-0 w-screen px-10 mt-3"
             />
         </div>
-        <div class="relative z-10 flex">
-            <img
-                id="logo"
-                src="./assets/ISWAN_Logo_White_NoStrap.png"
-                alt="ISWAN logo"
-                class="w-24 md:w-40"
-            />
-        </div>
+        <img
+            id="logo"
+            src="./assets/ISWAN_Logo_White_NoStrap.png"
+            alt="ISWAN logo"
+            class="relative z-10 w-24 md:w-40"
+        />
         <div class="relative z-10 w-5/6 pt-6 pb-16 mx-auto ">
             <p class="pb-8 text-3xl font-extrabold text-white md:text-5xl">
                 Festive Countdown!
@@ -51,8 +49,11 @@
                 />
             </a>
             <a class="ml-3" href="mailto: jamesstanleyswatton@gmail.com">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                    class="w-6 h-6 text-white fill-current md:w-8 md:h-8">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="w-6 h-6 text-white fill-current md:w-8 md:h-8"
+                >
                     <path
                         d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
