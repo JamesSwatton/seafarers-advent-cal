@@ -1,12 +1,11 @@
 <template>
-    <div
-        class="relative w-5/6 pt-32 pb-10 mx-auto sm:pl-10 md:pl-0 md:pt-64 md:w-4/6"
-    >
+    <div class="w-5/6 pb-10 mx-auto sm:pl-10 md:pl-0 md:w-4/6">
         <div class="flex flex-row flex-wrap-reverse mx-auto">
             <Container
                 v-for="(item, i) in grid.toString().split(',')"
                 :key="i"
                 :day="item"
+                :link="getLink(item)"
                 :openedDoors="openedDoors"
                 @openedDoor="openedDoors.push(parseInt($event))"
             ></Container>
@@ -79,6 +78,11 @@ export default {
                         .map(n => parseInt(n));
                 }
             });
+        },
+        getLink(key) {
+            return this.links[key]
+                ? this.links[key]
+                : "https://www.seafarerswelfare.org/";
         }
     },
     created() {

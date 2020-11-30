@@ -46,9 +46,17 @@
                 class="absolute top-0 left-0 flex flex-col items-center justify-center w-24 h-24 bg-cover md:w-32 md:h-32 lg:w-48 lg:h-48"
                 :style="getOpenDoor"
             >
-                <p class="text-xl text-white underline md:text-3xl">
-                    <a :href="link">ISWAN</a>
-                </p>
+                <a :href="link">
+                    <img
+                        src="../assets/question_mrk.png"
+                        alt="question mark"
+                        class="h-20"
+                    />
+                </a>
+
+                <!-- <p class="text-xl text-white underline md:text-3xl"> -->
+                <!--     <a :href="link">Hello</a> -->
+                <!-- </p> -->
             </div>
         </div>
     </div>
@@ -57,10 +65,9 @@
 <script>
 export default {
     name: "Container",
-    props: ["day", "openedDoors"],
+    props: ["day", "openedDoors", "link"],
     data() {
         return {
-            link: "https://www.seafarerswelfare.org/",
             assetsList: [
                 { src: "red.png", alt: "red container" },
                 { src: "gray.png", alt: "gray container" },
@@ -125,6 +132,7 @@ export default {
     },
     created() {
         this.checkForOpened();
+        console.log(this.link);
     }
 };
 </script>
