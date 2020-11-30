@@ -15,24 +15,6 @@
                 {{ parseDay }}
             </p>
         </button>
-        <!-- <img -->
-        <!--     class="object-fill w-48 h-48" -->
-        <!--     :src="require('../assets/container_' + getRandomAssetPath.src)" -->
-        <!--     :alt="getRandomAssetPath.alt" -->
-        <!--     v-if="!opened && day == 0" -->
-        <!-- /> -->
-        <!-- <div v-else-if="!opened && day > 0"> -->
-        <!--     <img -->
-        <!--         class="object-fill w-48 h-48 " -->
-        <!--         :src=" -->
-        <!--             require('../assets/container_door_' + -->
-        <!--                 getRandomAssetPath.src) -->
-        <!--         " -->
-        <!--         :alt="getRandomAssetPath.alt" -->
-        <!--         @click="clicked = true" -->
-        <!--     /> -->
-        <!--     <p class="text-6xl font-extrabold text-white ">{{ parseDay }}</p> -->
-        <!-- </div> -->
         <div
             v-else
             class="relative w-24 h-24 bg-gray-800 md:w-32 md:h-32 lg:w-48 lg:h-48"
@@ -48,12 +30,11 @@
             >
                 <a :href="link">
                     <img
-                        src="../assets/question_mrk.png"
+                        src="../assets/door_stars.png"
                         alt="question mark"
-                        class="h-20"
+                        class="h-10 md:h-12 lg:h-20"
                     />
                 </a>
-
                 <!-- <p class="text-xl text-white underline md:text-3xl"> -->
                 <!--     <a :href="link">Hello</a> -->
                 <!-- </p> -->

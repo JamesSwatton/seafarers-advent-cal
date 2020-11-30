@@ -1,8 +1,5 @@
 <template>
-    <!-- <div id="app" class="overflow-hidden" :style="backgroundImage"> -->
-    <!--     <ContainerList></ContainerList> -->
-    <!-- </div> -->
-    <div>
+    <div id="app">
         <div id="background" class="fixed w-screen h-screen">
             <div class="h-64 bg-gray-900"></div>
             <div
@@ -11,19 +8,33 @@
             <img
                 src="./assets/moon.png"
                 alt="moon"
-                class="fixed top-0 right-0 z-0 w-16 pt-32 mr-10 md:mr-24 lg:w-24"
+                class="fixed top-0 right-0 z-0 w-12 pt-32 mr-10 md:w-16 md:mr-24 lg:w-24"
+            />
+            <img
+                src="./assets/stars.png"
+                alt="stars"
+                class="fixed top-0 right-0 w-screen px-10 mt-3"
             />
         </div>
-        <img
-            src="./assets/ISWAN_Logo_White_NoStrap.png"
-            alt="ISWAN logo"
-            class="relative z-10 w-40"
-        />
+        <div class="relative z-10 flex">
+            <!-- <img -->
+            <!--     src="./assets/Christmas-graphic.jpg" -->
+            <!--     alt="festive countdown -->
+            <!-- graphic" -->
+            <!--     class="h-32" -->
+            <!-- /> -->
+            <img
+                id="logo"
+                src="./assets/ISWAN_Logo_White_NoStrap.png"
+                alt="ISWAN logo"
+                class="w-24 md:w-40"
+            />
+        </div>
         <div class="relative z-10 w-5/6 pt-6 pb-16 mx-auto ">
-            <p class="pb-8 text-5xl font-extrabold text-white">
+            <p class="pb-8 text-3xl font-extrabold text-white md:text-5xl">
                 Festive Countdown!
             </p>
-            <p class="text-2xl font-thin text-white ">
+            <p class="font-thin text-white text-md md:text-xl lg:text-2xl ">
                 As part of this year’s #SeafarersDeliveringChristmas campaign,
                 you can follow our Festive Countdown for seafarers throughout
                 December! Behind each door is a prize giveaway, an idea for an
@@ -56,7 +67,6 @@ export default {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #2c3e50;
 }
 </style>
