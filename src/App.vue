@@ -2,15 +2,28 @@
     <!-- <div id="app" class="overflow-hidden" :style="backgroundImage"> -->
     <!--     <ContainerList></ContainerList> -->
     <!-- </div> -->
-    <div class="relative bg-gradient-to-b from-gray-900 to-blue-200">
+    <div>
+        <div id="background" class="fixed w-screen h-screen">
+            <div class="h-64 bg-gray-900"></div>
+            <div
+                class="h-full bg-gradient-to-b from-gray-900 to-blue-200"
+            ></div>
+            <img
+                src="./assets/moon.png"
+                alt="moon"
+                class="fixed top-0 right-0 z-0 w-16 pt-32 mr-10 md:mr-24 lg:w-24"
+            />
+        </div>
         <img
             src="./assets/ISWAN_Logo_White_NoStrap.png"
             alt="ISWAN logo"
-            class="w-40"
+            class="relative z-10 w-40"
         />
         <div class="relative z-10 w-5/6 pt-6 pb-16 mx-auto ">
-            <p class="pb-8 text-4xl text-white">Festive Countdown!</p>
-            <p class="text-2xl text-white ">
+            <p class="pb-8 text-5xl font-extrabold text-white">
+                Festive Countdown!
+            </p>
+            <p class="text-2xl font-thin text-white ">
                 As part of this year’s #SeafarersDeliveringChristmas campaign,
                 you can follow our Festive Countdown for seafarers throughout
                 December! Behind each door is a prize giveaway, an idea for an
@@ -19,14 +32,7 @@
                 family. Wishing you all a happy, healthy festive season!
             </p>
         </div>
-        <div class="relative">
-            <img
-                src="./assets/moon.png"
-                alt="moon"
-                class="absolute top-0 right-0 z-0 w-16 mr-10 md:mr-24 lg:w-24"
-            />
-            <ContainerList></ContainerList>
-        </div>
+        <ContainerList></ContainerList>
     </div>
 </template>
 
