@@ -34,7 +34,21 @@ export default {
                 [21, 0, 25, 0],
                 [0, 6, 15, 0],
                 [7, 18, 0, 23]
-            ]
+            ],
+            links: {
+                "1":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-1-giveaway",
+                "2":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-2-decorations",
+                "3":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-3-party-game-1",
+                "4":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-4-fancy-dress",
+                "5":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-5-recipes-1",
+                "6":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-6-message-board"
+            }
         };
     },
     watch: {
