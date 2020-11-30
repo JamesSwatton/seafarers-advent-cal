@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/seafarers-festive-countdown/'
-}
+    publicPath: "/seafarers-advent-cal/"
+};
