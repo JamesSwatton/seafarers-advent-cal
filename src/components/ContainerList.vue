@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-5/6 pl-6 mx-auto md:pl-0 md:w-4/6">
+    <div class="relative w-5/6 pl-3 mx-auto mb-8 md:mb-12 md:pl-0 md:w-4/6">
         <div class="flex flex-row flex-wrap-reverse mx-auto">
             <Container
                 v-for="(item, i) in grid.toString().split(',')"

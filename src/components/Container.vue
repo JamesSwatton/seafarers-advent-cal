@@ -1,34 +1,33 @@
 <template>
-    <div>
+    <div class="w-24 h-24 shadow-2xl box-border md:w-32 md:h-32 lg:w-48 lg:h-48">
         <div
-            class="w-24 h-24 bg-cover md:w-32 md:h-32 lg:w-48 lg:h-48"
+            class="w-full h-full bg-cover "
             :style="getContainer"
             v-if="!opened && day == 0"
         ></div>
         <button
-            class="flex items-center justify-center w-24 h-24 bg-center bg-contain md:w-32 md:h-32 lg:w-48 lg:h-48"
+            class="flex items-center justify-center w-full h-full bg-center bg-contain"
             :style="getDoor"
             v-else-if="!opened && day > 0"
             @click="clicked = true"
         >
-            <p class="text-3xl font-extrabold text-white md:text-6xl">
+            <p
+                class="inline-block w-full text-3xl font-extrabold text-center text-white hover:scale-110 transform hover:text-gray-800 md:text-6xl"
+            >
                 {{ parseDay }}
             </p>
         </button>
-        <div
-            v-else
-            class="relative w-24 h-24 bg-gray-800 md:w-32 md:h-32 lg:w-48 lg:h-48"
-        >
+        <div v-else class="relative w-full h-full bg-gray-800">
             <p
                 class="absolute top-0 right-0 mt-1 mr-3 text-2xl text-white opacity-75 md:text-3xl md:mt-2 md:mr-4 lg:mt-6 lg:mr-8"
             >
                 {{ day }}
             </p>
             <div
-                class="absolute top-0 left-0 flex flex-col items-center justify-center w-24 h-24 bg-cover md:w-32 md:h-32 lg:w-48 lg:h-48"
+                class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full bg-cover "
                 :style="getOpenDoor"
             >
-                <a :href="link">
+                <a :href="link" class="hover:scale-125 transform">
                     <img
                         src="../assets/door_stars.png"
                         alt="question mark"
@@ -57,7 +56,8 @@ export default {
                 { src: "yellow.png", alt: "yellow container" }
             ],
             clicked: false,
-            opened: false
+            opened: false,
+            isHovering: false
         };
     },
     watch: {
@@ -86,7 +86,9 @@ export default {
         },
         isCorrectDay() {
             const newDate = new Date();
-            return this.day <= newDate.getDate() ? true : false;
+            return this.day <= newDate.getDate() && newDate.getMonth() == 11
+                ? true
+                : false;
         },
         getRandomAssetPath() {
             let randNum = Math.floor(Math.random() * this.assetsList.length);
@@ -118,4 +120,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.hovering {
+    @apply text-gray-800;
+}
+</style>

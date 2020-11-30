@@ -17,12 +17,6 @@
             />
         </div>
         <div class="relative z-10 flex">
-            <!-- <img -->
-            <!--     src="./assets/Christmas-graphic.jpg" -->
-            <!--     alt="festive countdown -->
-            <!-- graphic" -->
-            <!--     class="h-32" -->
-            <!-- /> -->
             <img
                 id="logo"
                 src="./assets/ISWAN_Logo_White_NoStrap.png"
@@ -44,6 +38,27 @@
             </p>
         </div>
         <ContainerList></ContainerList>
+        <div class="relative z-10 flex justify-center mb:4 md:mb-8">
+            <p class="pt-1 pr-4 text-sm text-white md:text-lg ">
+                Made by James Swatton
+            </p>
+            <a href="https://www.github.com/jamesswatton">
+                <img
+                    src="./assets/GitHub-Mark-Light-64px.png"
+                    alt="James Swatton's
+                GitHub profile"
+                    class="w-6 h-6 md:w-8 md:h-8"
+                />
+            </a>
+            <a class="ml-3" href="mailto: jamesstanleyswatton@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    class="w-6 h-6 text-white fill-current md:w-8 md:h-8">
+                    <path
+                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                </svg>
+            </a>
+        </div>
     </div>
 </template>
 
@@ -52,13 +67,6 @@ import ContainerList from "./components/ContainerList";
 export default {
     name: "App",
     components: { ContainerList }
-    //computed: {
-    //    backgroundImage() {
-    //        return {
-    //            backgroundImage: `url(${require("./assets/background.png")})`
-    //        };
-    //    }
-    //}
 };
 </script>
 
