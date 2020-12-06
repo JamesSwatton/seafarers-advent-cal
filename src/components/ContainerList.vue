@@ -46,7 +46,21 @@ export default {
                 "5":
                     "https://www.seafarerswelfare.org/festive-countdown-day-5-recipes-1",
                 "6":
-                    "https://www.seafarerswelfare.org/festive-countdown-day-6-message-board"
+                    "https://www.seafarerswelfare.org/festive-countdown-day-6-message-board",
+                "7":
+                    "https://www.seafarerswelfare.org/assets/documents/resources/SHS-Question-Day-7.pdf",
+                "8":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-8-giveaway",
+                "9":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-9-party-game-2",
+                "10":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-10-recipes-2",
+                "11":
+                    "https://www.seafarerswelfare.org/assets/documents/resources/SHS-Answer-Day-11.pdf",
+                "12":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-12-party-game-3",
+                "13":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-13-workout"
             }
         };
     },
