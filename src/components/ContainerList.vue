@@ -57,10 +57,18 @@ export default {
                     "https://www.seafarerswelfare.org/festive-countdown-day-10-recipes-2",
                 "11":
                     "https://www.seafarerswelfare.org/assets/documents/resources/SHS-Answer-Day-11.pdf",
-                "12":
-                    "https://www.seafarerswelfare.org/festive-countdown-day-12-party-game-3",
+                "12": "https://landing.kvh.com/FestiveCountdown",
                 "13":
-                    "https://www.seafarerswelfare.org/festive-countdown-day-13-workout"
+                    "https://www.seafarerswelfare.org/festive-countdown-day-13-workout",
+                "14":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-14-party-game-3",
+                "15": "https://www.youtube.com/embed/6QishjbYrzI",
+                "16":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-16-recipes-3",
+                "17":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-17-news-from-home",
+                "18":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-18-party-game-4"
             }
         };
     },
