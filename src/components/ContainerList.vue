@@ -68,7 +68,19 @@ export default {
                 "17":
                     "https://www.seafarerswelfare.org/festive-countdown-day-17-news-from-home",
                 "18":
-                    "https://www.seafarerswelfare.org/festive-countdown-day-18-party-game-4"
+                    "https://www.seafarerswelfare.org/festive-countdown-day-18-party-game-4",
+                "19":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-19-free-calls-and-minutes",
+                "20":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-20-icma-videos",
+                "21": "https://www.youtube.com/embed/oEkV1bu8XbQ",
+                "22":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-22-recipes-4",
+                "23":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-23-free-calls-and-minutes",
+                "24":
+                    "https://www.seafarerswelfare.org/festive-countdown-day-24-party-game-5",
+                "25": "https://www.youtube.com/embed/HLBaoir1d3o"
             }
         };
     },
